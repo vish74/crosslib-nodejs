@@ -48,6 +48,6 @@ ENV AS=/usr/bin/${CROSS_TRIPLE}-as \
 
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 
-RUN export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh
+RUN export NVM_DIR=~/.nvm && /bin/bash ~/.nvm/nvm.sh
 
 RUN nvm install v0.10.40 && nvm install v6.10.2
