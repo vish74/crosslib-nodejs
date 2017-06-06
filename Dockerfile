@@ -50,4 +50,4 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh
 
 RUN export NVM_DIR=~/.nvm && /bin/bash ~/.nvm/nvm.sh
 
-RUN nvm install v0.10.40 && nvm install v6.10.2
+RUN /bin/bash nvm install v0.10.40 && /bin/bash nvm install v6.10.2
